@@ -1,0 +1,6 @@
+framework module LDErrorMessage {
+  umbrella header "LDErrorMessage-umbrella.h"
+
+  export *
+  module * { export * }
+}

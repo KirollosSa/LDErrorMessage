@@ -1,0 +1,16 @@
+PODS:
+  - LDErrorMessage (0.1.0)
+
+DEPENDENCIES:
+  - LDErrorMessage (from `../`)
+
+EXTERNAL SOURCES:
+  LDErrorMessage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LDErrorMessage: 5c7508bcad7f95c68861bd75849c164335a7e8da
+
+PODFILE CHECKSUM: 0fbf78bffc478531778a9a86b152b7d6e8ea34e7
+
+COCOAPODS: 1.6.1

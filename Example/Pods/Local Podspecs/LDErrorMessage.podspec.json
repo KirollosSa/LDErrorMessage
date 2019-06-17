@@ -1,0 +1,22 @@
+{
+  "name": "LDErrorMessage",
+  "version": "0.1.0",
+  "summary": "A short description of LDErrorMessage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kirollosSa/LDErrorMessage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kirollosSa": "kirollos.maged@linkdev.com"
+  },
+  "source": {
+    "git": "https://github.com/kirollosSa/LDErrorMessage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LDErrorMessage/Classes/**/*"
+}
