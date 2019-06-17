@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LDErrorMessage
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        LDErrorMessage.shared.setDefauls(messageText: "Pod Test",
+                                           internetErrorMessage: "Pod internet error",
+                                           generalErrorImage: UIImage(named: "warning.png")!,
+                                           internetErrorImage: UIImage(named: "no-wifi.png")!,
+                                           btnText: "Retry",
+                                           messageTextColor: .blue,
+                                           btnTextColor: .white,
+                                           btnBackgroundColor: .blue,
+                                           btnBorderColor: .clear,
+                                           actionBTNCornerRadios: 12)
+        
+        
         return true
     }
 
