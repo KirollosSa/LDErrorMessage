@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LDErrorMessage_Example' do
+  pod 'LDErrorMessage', :path => '../'
+
+  target 'LDErrorMessage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
