@@ -96,8 +96,8 @@ public class LDErrorMessage: NSObject {
         popUpVC.btnCornerRadios             = self.buttonCornerRadios
         popUpVC.btnBackgroundColor          = self.btnBackgroundColor
         popUpVC.btnText                     = self.btnText
-        delegate.addChildViewController(popUpVC)
-        popUpVC.didMove(toParentViewController: delegate)
+        delegate.addChild(popUpVC)
+        popUpVC.didMove(toParent: delegate)
         popUpVC.view.frame = CGRect.init(x: 0, y: 0, width: view.frame.size.width, height: (view.frame.size.height))
         popUpVC.view.center = CGPoint(x: view.frame.size.width/2, y: view.frame.size.height/2)
             view.addSubview(popUpVC.view)
@@ -132,8 +132,8 @@ public class LDErrorMessage: NSObject {
         popUpVC.btnCornerRadios             = buttonCornerRadios
         popUpVC.btnBackgroundColor          = btnBackgroundColor
         popUpVC.btnText                     = btnText
-        delegate.addChildViewController(popUpVC)
-        popUpVC.didMove(toParentViewController: delegate)
+        delegate.addChild(popUpVC)
+        popUpVC.didMove(toParent: delegate)
         popUpVC.view.frame = CGRect.init(x: 0, y: 0, width: view.frame.size.width, height: (view.frame.size.height))
         popUpVC.view.center = CGPoint(x: view.frame.size.width/2, y: view.frame.size.height/2)
         view.addSubview(popUpVC.view)

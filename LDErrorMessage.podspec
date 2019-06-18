@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LDErrorMessage'
   s.version          = '0.1.0'
-  s.summary          = 'Link Development Error Message handler'
+  s.summary          = 'Link Development Error Message handler. '
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  Link Development Error Message handler
 TODO: Add long description of the pod here.
                        DESC
 
@@ -29,12 +28,14 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/kirollosSa/LDErrorMessage.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
+  s.swift_version = '4.2'
+  s.ios.deployment_target = '9.3'
+  
   s.source_files = 'LDErrorMessage/Classes/**/*'
   
+  
   s.resource_bundles = {
-      'LDMessageHandler' => ['Pod/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}']
+      '{LDErrorMessage}' => ['{LDErrorMessage}/Classes/*.xib']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
